@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ArticleActivity">
+
+    <item
+        android:id="@+id/itemSearchFeeds"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/itemAddNewFeed"
+        android:icon="@drawable/ic_create_white_24dp"
+        android:title="@string/add_new_feed"
+        app:showAsAction="ifRoom" />
+    <group
+        android:id="@+id/language_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/itemLanguageSelectorEN"
+            android:title="@string/language_en"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/itemLanguageSelectorIT"
+            android:title="@string/language_it"
+            app:showAsAction="never" />
+    </group>
+</menu>

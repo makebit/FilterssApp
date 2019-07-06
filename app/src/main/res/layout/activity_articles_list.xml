@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?><!--Scrollable content-->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout_articles_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/articles_list_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="@string/multifeed"
+            app:titleTextColor="@android:color/white" />
+
+        <ProgressBar
+            android:id="@+id/progressBarArticlesList"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="64dp"
+            android:indeterminate="true" />
+
+        <LinearLayout
+            android:id="@+id/articlesListLinearLayoutNoContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                style="@style/material_type_scale_subtitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="8dp"
+                android:text="@string/no_content_yet" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/articlesListLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <!--
+            What we actually want to achieve is make a header (a ViewPager) as a separate view and not related to a RecyclerView List
+            and also being able to recycle the RecyclerView. But normally the problem with this is when you scroll the RecyclerView,
+            the header is not scrolling along with it, so RecyclerView area becomes too small.
+            This is perfect case when we can use CoordinatorLayout & CollapsingToolbarLayout.
+            -->
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/articleListAppBarLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.CollapsingToolbarLayout
+                        android:id="@+id/main.collapsing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#000000"
+                        app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                        app:scrimAnimationDuration="0">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:orientation="vertical"
+                            android:paddingBottom="16dp">
+
+                            <com.makebit.filterss.helpers.MyViewPager
+                                android:id="@+id/pagerArticles"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop" />
+
+
+                            <!--<android.support.design.widget.TabLayout
+                                android:id="@+id/tab_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="4dp"
+                                android:background="#000000"/>-->
+                        </LinearLayout>
+
+                    </android.support.design.widget.CollapsingToolbarLayout>
+                </android.support.design.widget.AppBarLayout>
+
+                <FrameLayout
+                    android:id="@+id/articleListFrameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                <Button
+                    android:id="@+id/buttonUpdate"
+                    style="@style/material_type_scale_subtitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rectangular_black_rounded_color"
+                    android:padding="16dp"
+                    android:text="@string/update"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone" />
+
+            </android.support.design.widget.CoordinatorLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view_article"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/drawer_view_account_header" />
+
+                <TextView
+                    android:id="@+id/textViewMultifeedList"
+                    style="@style/material_type_scale_h5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:gravity="left"
+                    android:text="@string/multifeed_title"
+                    android:textAllCaps="true" />
+
+                <com.makebit.filterss.helpers.NonScrollExpandableListView
+                    android:id="@+id/exp_list_view_multifeeds"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:childDivider="#00000000"
+                    android:choiceMode="multipleChoice"
+                    android:dividerHeight="0dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_margin="16dp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/textViewCollectionsList"
+                    style="@style/material_type_scale_h5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:gravity="left"
+
+                    android:text="@string/collections_title"
+                    android:textAllCaps="true" />
+
+                <com.makebit.filterss.helpers.NonScrollExpandableListView
+                    android:id="@+id/exp_list_view_collections"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:childDivider="#00000000"
+                    android:choiceMode="multipleChoice"
+                    android:dividerHeight="0dp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

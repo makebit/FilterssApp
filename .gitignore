@@ -63,3 +63,15 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
+
+# Custom
+.gradle
+local.properties
+/.idea/
+/app/debug
+/app/release
+/app/build
+/app/keystore
+/app/google-services.json
+/gradle
+/app/src/main/java/com/makebit/filterss/service/RESTConstants.java

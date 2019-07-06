@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all"
+            android:icon="@drawable/ic_apps_black_24dp"
+            android:title="All" />
+        <item
+            android:id="@+id/nav_beauty"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="Beauty" />
+        <item
+            android:id="@+id/nav_business"
+            android:icon="@drawable/ic_business_black_24dp"
+            android:title="Business" />
+        <item
+            android:id="@+id/nav_cinema"
+            android:icon="@drawable/ic_local_movies_black_24dp"
+            android:title="Cinema" />
+        <item
+            android:id="@+id/nav_comics"
+            android:icon="@drawable/ic_textsms_black_24dp"
+            android:title="Comics" />
+        <item
+            android:id="@+id/nav_culture"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="Culture" />
+        <item
+            android:id="@+id/nav_design"
+            android:icon="@drawable/ic_palette_black_24dp"
+            android:title="Design" />
+        <item
+            android:id="@+id/nav_diy"
+            android:icon="@drawable/ic_gavel_black_24dp"
+            android:title="DIY" />
+        <item
+            android:id="@+id/nav_education"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="Education" />
+        <item
+            android:id="@+id/nav_entrepreneurship"
+            android:icon="@drawable/ic_business_center_black_24dp"
+            android:title="Entrepreneurship" />
+        <item
+            android:id="@+id/nav_fashion"
+            android:icon="@drawable/ic_bubble_chart_black_24dp"
+            android:title="Fashion" />
+        <item
+            android:id="@+id/nav_finance"
+            android:icon="@drawable/ic_show_chart_black_24dp"
+            android:title="Finance" />
+        <item
+            android:id="@+id/nav_food"
+            android:icon="@drawable/ic_cake_black_24dp"
+            android:title="Food" />
+        <item
+            android:id="@+id/nav_gaming"
+            android:icon="@drawable/ic_games_black_24dp"
+            android:title="Gaming" />
+        <item
+            android:id="@+id/nav_marketing"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="Marketing" />
+        <item
+            android:id="@+id/nav_motors"
+            android:icon="@drawable/ic_directions_car_black_24dp"
+            android:title="Motors" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_local_library_black_24dp"
+            android:title="News" />
+        <item
+            android:id="@+id/nav_photograpy"
+            android:icon="@drawable/ic_photo_camera_black_24dp"
+            android:title="Photography" />
+        <item
+            android:id="@+id/nav_science"
+            android:icon="@drawable/ic_spa_black_24dp"
+            android:title="Science" />
+        <item
+            android:id="@+id/nav_seo"
+            android:icon="@drawable/ic_search_white_24dp"
+            android:title="SEO" />
+        <item
+            android:id="@+id/nav_tech"
+            android:icon="@drawable/ic_usb_black_24dp"
+            android:title="Tech" />
+        <item
+            android:id="@+id/nav_travel"
+            android:icon="@drawable/ic_card_travel_black_24dp"
+            android:title="Travel" />
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/ic_videocam_black_24dp"
+            android:title="Video" />
+    </group>
+</menu>

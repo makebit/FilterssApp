@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">Filterss</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="dialog_add_feed_title">Scegli un multifeed</string>
+    <string name="dialog_add_feed_positive_button">Crea nuovo</string>
+    <string name="cancel">Annulla</string>
+    <string name="feed_add_error">Si è verificato un errore durante l\'aggiunta del feed</string>
+    <string name="swipe_to_save">Salvato in Leggi più tardi</string>
+    <string name="unswipe_to_remove">Rimosso da Leggi più tardi</string>
+    <string name="removed_from_collection">Rimosso dalla collezione</string>
+    <string name="categories">Categorie</string>
+    <string name="search_feed">Cerca feed</string>
+    <string name="multifeed">Multifeed</string>
+    <string name="multifeeds">Multifeeds</string>
+    <string name="collection">Collezione</string>
+    <string name="collections">Collezioni</string>
+    <string name="language_en">Inglese</string>
+    <string name="language_it">Italiano</string>
+    <string name="name">Nome</string>
+    <string name="popularity">Popolarità</string>
+    <string name="color">Colore</string>
+    <string name="choose">Scegli</string>
+    <string name="dialog_remove_feed_title">Rimuovere questo feed?</string>
+    <string name="dialog_remove_multifeed_title">Rimuovere questo multifeed?</string>
+    <string name="remove">Rimuovere</string>
+    <string name="feeds">Feed</string>
+    <string name="feedback_question">Come valuti questo contenuto?</string>
+    <string name="feedback_good">Buono</string>
+    <string name="feedback_average">Medio</string>
+    <string name="feedback_bad">Cattivo</string>
+    <string name="thank_you_feedback_submit">Grazie per il feedback</string>
+    <string name="dialog_remove_collection_title">Rimuovere questa collezione?</string>
+    <string name="save">Salva</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Non hai un account? Creane uno</string>
+    <string name="login">Login</string>
+    <string name="authenticating">Accesso ...</string>
+    <string name="authentication_failed">Accesso fallita!</string>
+    <string name="register">Registrati</string>
+    <string name="already_member">Sei già registrato? Accedi</string>
+    <string name="creating_account">Creazione dell\'account ...</string>
+    <string name="login_failed">Login fallito, controlla le tue credenziali o attiva il tuo account</string>
+    <string name="email_not_valid">Inserire un indirizzo email valido</string>
+    <string name="password_not_valid">Tra 4 e 20 caratteri alfanumerici</string>
+    <string name="signup_failed">Accesso fallito</string>
+    <string name="name_not_valid">Almeno 3 caratteri</string>
+    <string name="name_not_empty">Il nome della raccolta non può essere vuoto</string>
+    <string name="dialog_add_article_to_collection">Aggiungi un articolo alla collezione</string>
+    <string name="article_added_to_collection">Articolo aggiunto alla raccolta</string>
+    <string name="error_adding_article">Errore durante l\'aggiunta dell\'articolo alla raccolta</string>
+    <string name="dialog_add_article_positive_button">Crea nuova collezione</string>
+    <string name="collection_name">Nome della collezione</string>
+    <string name="registration_completed_login">Registrazione completata, accedi ora con le tue credenziali</string>
+    <string name="multifeed_title">Tutti i multifeeds</string>
+    <string name="collections_title">Collezioni</string>
+    <string name="new_multifeed">Nuovo Multifeed</string>
+    <string name="multifeed_name">Nome del Multifeed</string>
+    <string name="multifeed_saved">Multifeed salvato correttamente</string>
+    <string name="multifeed_not_saved">Errore durante la creazione dell\'alimentazione multipla</string>
+    <string name="feed">Alimentazione</string>
+    <string name="saved_in">salvato in</string>
+    <string name="error_adding_feed">Errore durante l\'aggiunta del feed</string>
+    <string name="loading">Caricamento in corso...</string>
+    <string name="updating_user_information">Sincronizzazione dei tuoi dati ...</string>
+    <string name="user_information_updated">Sincronizzazione completata</string>
+    <string name="feed_deleted_successfully">Feed cancellato con successo</string>
+    <string name="multifeed_deleted_successfully">Multifeed cancellato con successo</string>
+    <string name="multifeed_updated_successfully">Multifeed aggiornato correttamente</string>
+    <string name="feed_deletion_error">Si è verificato un errore con l\'eliminazione del feed</string>
+    <string name="multifeed_deletion_error">Si è verificato un errore con l\'eliminazione del multifeed</string>
+    <string name="multifeed_update_error">Si è verificato un errore con l\'aggiornamento del multifeed</string>
+    <string name="open_article">Apri articolo</string>
+    <string name="error_connection">Si è verificato un errore con la connessione</string>
+    <string name="read_it_later">Leggilo più tardi</string>
+    <string name="logout">Logout</string>
+    <string name="dialog_are_you_sure">Sei sicuro?</string>
+    <string name="collection_created">Collezione creata con successo</string>
+    <string name="collection_removed_successfully">Collezione rimossa con successo</string>
+    <string name="collection_remove_error">Si è verificato un errore con la rimozione della collezione</string>
+    <string name="collection_updated_successfully">Collezione aggiornata con successo</string>
+    <string name="collection_update_error">Si è verificato un errore con l\'aggiornamento della collezione</string>
+    <string name="share_article">Condividi articolo</string>
+    <string name="today">Oggi</string>
+    <string name="yesterday">Ieri</string>
+    <string name="days_ago">giorni fa</string>
+    <string name="error_collection_not_found">Errore, raccolta non trovata</string>
+    <string name="article_removed_from_collection">Articolo rimosso dalla raccolta</string>
+    <string name="no_content_yet">Nessun contenuto, ancora! Aggiungi del contenuto con il pulsante + nella parte in alto a destra dello schermo</string>
+    <string name="not_possible_remove_this_collection">Non è possibile rimuovere questa collezione</string>
+    <string name="updating_articles">Aggiornamento articoli ...</string>
+    <string name="update">Aggiorna</string>
+    <string name="now">Adesso</string>
+    <string name="one_minute_ago">1 minuto fa</string>
+    <string name="minutes_ago">minuti fa</string>
+    <string name="one_hour_ago">1 ora fa</string>
+    <string name="hours_ago">ore fa</string>
+    <string name="order_by">Ordina per</string>
+    <string name="date">Data</string>
+    <string name="or">O</string>
+    <string name="intro_title_1">Benvenuto!</string>
+    <string name="intro_desc_1">
+        Benvenuto in Filters, il primo lettore RSS intelligente.
+        Ti consente di leggere gli articoli più popolari pubblicati dai tuoi feed preferiti.
+    </string>
+    <string name="intro_title_2">Ordina articoli</string>
+    <string name="intro_desc_2">
+        Gli articoli possono essere ordinati per data o popolarità,
+        tu ed altri utenti contribuite a rendere popolari gli articoli.
+    </string>
+    <string name="intro_title_3">Multifeeds e Collezioni</string>
+    <string name="intro_desc_3">
+        Organizza i tuoi feed in contenitori chiamati Multifeeds,
+        e salva i tuoi articoli preferiti in Collezioni</string>
+    <string name="intro_title_4">Leggilo più tardi</string>
+    <string name="intro_desc_4">
+        Abbiamo creato una collezione chiamata \"Leggilo più tardi\" per te,
+        fai scorrere il dito su un articolo per salvarlo in questa raccolta.
+    </string>
+    <string name="intro_title_5">Esplora e cerca nuovi feeds</string>
+    <string name="intro_desc_5">
+        Cerca tra centinaia di feed e aggiungili ai multifeed per creare la tua news board personale.
+        Tieni premuto su un feed per scoprire di cosa parla.
+    </string>
+    <string name="terms_and_conditions">Termini e condizioni</string>
+    <string name="search">Cerca</string>
+    <string name="add_feed">Aggiungi feed</string>
+    <string name="add_new_feed">Aggiungi nuovo feed</string>
+    <string name="link">Link</string>
+    <string name="dialog_create_new_feed_title">Crea nuovo feed</string>
+    <string name="article_already_saved">Articolo già salvato</string>
+    <string name="dialog_crete_new_feed_positive_button">Crea feed</string>
+    <string name="error_creating_feed">Multfieed, nome e link non possono essere vuoti</string>
+    <string name="app_intro_skip_button">SALTA</string>
+    <string name="app_intro_next_button">AVANTI</string>
+    <string name="app_intro_back_button">INDIETRO</string>
+    <string name="app_intro_done_button">FINE</string>
+    <string name="app_intro_image_content_description">grafica</string>
+    <string name="feed_already_added">Feed già presente</string>
+    <string name="activate_account_title">Attiva il tuo account</string>
+    <string name="activate_account_message">Ti abbiamo inviato una mail per poter attivare il tuo account! Dopo l\'attivazione potrai effettuare il login</string>
+    <string name="ok">Ok</string>
+    <string name="duplicate_account">Un account con la stessa mail esiste già</string>
+    <string name="support">Richiesta assistenza</string>
+    <string name="describe_problem">Descrivi qui il problema</string>
+    <string name="send_email">Invia email</string>
+    <string name="back_again_to_exit">Premi INDIETRO ancora per uscire</string>
+    <string name="priority">Priorità</string>
+    <string name="priority_explanation">Scegliengo priorità alta il contenuto di questo multifeed verrà visualizzato prima degli altri</string>
+</resources>

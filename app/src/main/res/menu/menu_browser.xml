@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ArticleActivity">
+
+    <item
+        android:id="@+id/itemOpenInBrowser"
+        android:icon="@drawable/ic_open_in_browser_black_24dp"
+        android:title="Save"
+        app:showAsAction="always" />
+
+</menu>

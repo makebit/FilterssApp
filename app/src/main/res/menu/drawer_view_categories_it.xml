@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all"
+            android:icon="@drawable/ic_apps_black_24dp"
+            android:title="Tutti" />
+        <item
+            android:id="@+id/nav_cinema"
+            android:icon="@drawable/ic_local_movies_black_24dp"
+            android:title="Cinema" />
+        <item
+            android:id="@+id/nav_cucina"
+            android:icon="@drawable/ic_cake_black_24dp"
+            android:title="Cucina" />
+        <item
+            android:id="@+id/nav_cultura"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="Cultura" />
+        <item
+            android:id="@+id/nav_design"
+            android:icon="@drawable/ic_palette_black_24dp"
+            android:title="Design" />
+        <item
+            android:id="@+id/nav_economia"
+            android:icon="@drawable/ic_show_chart_black_24dp"
+            android:title="Economia" />
+        <item
+            android:id="@+id/nav_fumetti"
+            android:icon="@drawable/ic_textsms_black_24dp"
+            android:title="Fumetti" />
+        <item
+            android:id="@+id/nav_gossip"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="Gossip" />
+        <item
+            android:id="@+id/nav_marketing"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="Marketing" />
+        <item
+            android:id="@+id/nav_notizie"
+            android:icon="@drawable/ic_local_library_black_24dp"
+            android:title="Notizie" />
+        <item
+            android:id="@+id/nav_scienza"
+            android:icon="@drawable/ic_spa_black_24dp"
+            android:title="Scienza" />
+        <item
+            android:id="@+id/nav_tech"
+            android:icon="@drawable/ic_usb_black_24dp"
+            android:title="Tecnologia" />
+        <item
+            android:id="@+id/nav_tendenze"
+            android:icon="@drawable/ic_bubble_chart_black_24dp"
+            android:title="Tendenze" />
+        <item
+            android:id="@+id/nav_viaggi"
+            android:icon="@drawable/ic_card_travel_black_24dp"
+            android:title="Viaggi" />
+    </group>
+</menu>

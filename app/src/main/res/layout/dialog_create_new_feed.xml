@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewLabelFeedAddName"
+            style="@style/material_type_scale_overline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/editTextFeedAddName"
+            style="@style/material_type_scale_h6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:inputType="textCapWords"
+            android:lines="1"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/textViewLabelFeedAddLink"
+            style="@style/material_type_scale_overline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/link" />
+
+        <EditText
+            android:id="@+id/editTextFeedAddLink"
+            style="@style/material_type_scale_h6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:inputType="textUri"
+            android:lines="1"
+            android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

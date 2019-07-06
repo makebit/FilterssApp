@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/costraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewArticleSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:scaleType="centerInside"
+        android:tint="#80000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageViewArticleFeedIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSliderArticleSource"
+        app:layout_constraintTop_toTopOf="@+id/imageViewArticleSlider" />
+
+    <TextView
+        android:id="@+id/textViewSliderArticleSource"
+        style="@style/material_type_scale_overline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:maxEms="12"
+        android:maxLines="1"
+        android:text="..."
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewArticleSlider"
+        app:layout_constraintTop_toTopOf="@+id/imageViewArticleSlider" />
+
+    <TextView
+        android:id="@+id/textViewSliderArticlePubDate"
+        style="@style/material_type_scale_overline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:text="..."
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@+id/imageViewArticleSlider"
+        app:layout_constraintTop_toTopOf="@+id/imageViewArticleSlider" />
+
+    <TextView
+        android:id="@+id/textViewSliderArticleTitle"
+        style="@style/material_type_scale_h5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:inputType="none"
+        android:maxLines="2"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="32dp"
+        android:text="..."
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewArticleSlider"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewArticleSlider"
+        app:layout_constraintStart_toStartOf="@+id/imageViewArticleSlider" />
+
+</android.support.constraint.ConstraintLayout>
