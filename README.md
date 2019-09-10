@@ -10,9 +10,9 @@ effective way. In particular, we believe that being able to filter quality and i
 among the high number of articles published every day online, is a common problem nowadays.
 
 The main components of the system are:
-● **Server side part **, exposing a set of APIs, that are used to perform operations on a
+- **Server side part**, exposing a set of APIs, that are used to perform operations on a
 relational database, which contains all the information about the user and the feeds;
-● **Client side part** , the Android application, which tasks are to query the API, show
+- **Client side part**, the Android application, which tasks are to query the API, show
 the gathered informations and provide users a point of interaction with the service.
 The application is also in charge of gathering and parsing RSS feeds to retrieve and
 show articles.
@@ -23,16 +23,16 @@ show articles.
 
 In order to better understand the features and functionalities of the application we provide
 some definitions that should clarify some concepts of the application:
-● **article** : It is the content produced by a feed. It has some properties, and the feed
+- **article** : It is the content produced by a feed. It has some properties, and the feed
 decides which ones to provide, such as the title, the link to the page where the
 content is published, a publication date, the content of the article, ecc. In the next
 pages, we use content with the same meaning of article;
-● **feed** : It is the content creator (e.g. “BBC”). It releases its content using the RSS
+- **feed** : It is the content creator (e.g. “BBC”). It releases its content using the RSS
 protocol;
-● **multifeed** : it is a set of feeds. A multifeed is created and managed by the user (e.g. a
+- **multifeed** : it is a set of feeds. A multifeed is created and managed by the user (e.g. a
 multifeed called “News” could contains different feeds such as “BBC”, “La Stampa”
 and “The Guardian”);
-● **collection** : It is a set of saved articles. A collection is created and managed by the
+- **collection** : It is a set of saved articles. A collection is created and managed by the
 user. The user can decide to save articles storing them in different collections (e.g.
 an article about a science discovery can be saved in the “Science” collection).
 
